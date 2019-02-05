@@ -103,5 +103,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\aboutheaderPH.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\headshotPL.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

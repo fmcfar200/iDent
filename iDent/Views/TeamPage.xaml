@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iDent.Views.TeamPage"
+             xmlns:vm="clr-namespace:iDent.ViewModels"
+             Title="{Binding Title}">           
+
+    <ContentPage.BindingContext>
+        <vm:TeamViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HorizontalOptions="CenterAndExpand"
+                  Padding="25,25,25,25"
+                  RowSpacing="25">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                    <Image Source="headshotPL.jpg" HeightRequest="150"/>
+                    <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
+                    <Label Text="Senior Pension Captain" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1">
+                    <Image Source="headshotPL.jpg" HeightRequest="150"/>
+                    <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
+                    <Label Text="Senior Pension Captain" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0">
+                    <Image Source="headshotPL.jpg" HeightRequest="150"/>
+                    <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
+                    <Label Text="Senior Pension Captain" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+                    <Image Source="headshotPL.jpg" HeightRequest="150"/>
+                    <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
+                    <Label Text="Senior Pension Captain" HorizontalOptions="Center"/>
+                </StackLayout>
+              
+            </Grid>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
