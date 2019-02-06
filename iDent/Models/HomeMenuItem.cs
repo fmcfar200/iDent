@@ -8,10 +8,12 @@ namespace iDent.Models
     {
         Browse,
         Home,
+        Apply,
         UsefulLinks,
         MeetTheStaff,
         Gallery,
         Testimonials,
+        ContactUs,
         About
     }
     public class HomeMenuItem

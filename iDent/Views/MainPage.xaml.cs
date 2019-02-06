@@ -35,6 +35,9 @@ namespace iDent.Views
                     case (int)MenuItemType.MeetTheStaff:
                         MenuPages.Add(id, new NavigationPage(new TeamPage()));
                         break;
+                    case (int)MenuItemType.ContactUs:
+                        MenuPages.Add(id, new NavigationPage(new ContactPage()));
+                        break;
 
                 }
             }

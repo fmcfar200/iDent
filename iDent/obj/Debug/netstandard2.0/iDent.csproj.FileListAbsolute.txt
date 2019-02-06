@@ -16,3 +16,4 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\XamlC.st
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\iDent.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\iDent.pdb
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\TeamPage.xaml.g.cs
+C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ContactPage.xaml.g.cs
