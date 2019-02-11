@@ -97,7 +97,12 @@
                     </StackLayout>
                 </StackLayout>
 
-                <Button Text="Submit" HorizontalOptions="FillAndExpand" Margin="0,15,0,0"/>
+                <Button 
+                    Text="Submit" 
+                    HorizontalOptions="FillAndExpand" 
+                    Margin="0,15,0,0"
+                    BackgroundColor="{StaticResource NavigationPrimary}"
+                    Clicked="OnSubmitButtonClicked"/>
             </StackLayout>
             
             

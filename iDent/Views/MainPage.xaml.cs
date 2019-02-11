@@ -38,6 +38,12 @@ namespace iDent.Views
                     case (int)MenuItemType.ContactUs:
                         MenuPages.Add(id, new NavigationPage(new ContactPage()));
                         break;
+                    case (int)MenuItemType.Gallery:
+                        MenuPages.Add(id, new NavigationPage(new GalleryPage()));
+                        break;
+                    case (int)MenuItemType.Apply:
+                        MenuPages.Add(id, new NavigationPage(new ApplyPage()));
+                        break;
 
                 }
             }

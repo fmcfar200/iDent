@@ -1,9 +1,15 @@
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\iDent.Android.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\CarouselView.FormsPlugin.Abstractions.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\CarouselView.FormsPlugin.Android.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Com.Android.DeskClock.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Com.ViewPagerIndicator.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\FormsViewGroup.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\iDent.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Java.Interop.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\mscorlib.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Plugin.Messaging.Abstractions.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Plugin.Messaging.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Core.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Xml.dll
@@ -42,4 +48,6 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\asse
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Runtime.Serialization.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.ServiceModel.Internals.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Web.Services.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Runtime.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Collections.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Mono.Security.dll

@@ -56,3 +56,14 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\obj\iPhoneSimulator\Debug\Xam
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\obj\iPhoneSimulator\Debug\iDent.iOS.csproj.CopyComplete
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\obj\iPhoneSimulator\Debug\iDent.iOS.exe
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\obj\iPhoneSimulator\Debug\iDent.iOS.pdb
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\CarouselView.FormsPlugin.Abstractions.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\CarouselView.FormsPlugin.iOS.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\System.IO.Compression.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.Abstractions.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.Abstractions.pdb
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.dll

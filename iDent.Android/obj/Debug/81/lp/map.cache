@@ -1,6 +1,12 @@
-iDent
-System.Runtime
+CarouselView.FormsPlugin.Abstractions
+CarouselView.FormsPlugin.Android
+Com.Android.DeskClock
+Com.ViewPagerIndicator
 FormsViewGroup
+iDent
+Plugin.Messaging.Abstractions
+Plugin.Messaging
+System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
