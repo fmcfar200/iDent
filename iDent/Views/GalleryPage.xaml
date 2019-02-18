@@ -23,7 +23,8 @@
                                               CurrentPageIndicatorTintColor="Blue"
                                               IndicatorsTintColor="DarkGray"
                                               ShowArrows="True"
-                                              ShowIndicators="True">
+                                              ShowIndicators="True"
+                                              ArrowsBackgroundColor="Blue">
                     <controls:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
                             <Grid>

@@ -9,13 +9,16 @@ namespace iDent.Models
         Browse,
         Home,
         Apply,
-        UsefulLinks,
+        StudentLinks,
         MeetTheStaff,
         Gallery,
         Testimonials,
         ContactUs,
-        About
+        About,
+        Facebook,
+        Twitter
     }
+   
     public class HomeMenuItem
     {
         public MenuItemType Id { get; set; }

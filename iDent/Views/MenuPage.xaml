@@ -2,20 +2,66 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="iDent.Views.MenuPage"
-             Title="Menu">
+             Title="Menu"
+             BackgroundColor="{StaticResource NavigationSecondary}">
     <StackLayout VerticalOptions="FillAndExpand">
-        <Image Source="logo.png"> </Image>
+        <StackLayout BackgroundColor="{StaticResource NavigationPrimary}" Padding="10" Orientation="Horizontal">
+            <Image Source="identLogo100.png" 
+                   BackgroundColor="{StaticResource NavigationPrimary}" 
+                   WidthRequest="50" 
+                   HeightRequest="50" 
+                   HorizontalOptions="Start"/>
+            <Label Text="iDent Training" 
+                   Margin="5,0,0,0"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   TextColor="White"
+                   />
+
+        </StackLayout>
         <ListView x:Name="ListViewMenu"
-                    HasUnevenRows="True">
+                    HasUnevenRows="True"
+                    BackgroundColor="{StaticResource NavigationSecondary}"
+                   >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="10">
-                            <Label Text="{Binding Title}" FontSize="20"/>
+                        <Grid Padding="5">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Image Source="iconsHome.png" WidthRequest="25" HeightRequest="25"/>
+                                <Label Text="{Binding Title}" FontSize="Default" TextColor="White" FontAttributes="Bold" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
+                            </StackLayout>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            <ListView.Footer>
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                    <BoxView HeightRequest="2" BackgroundColor="White" Margin="5,5,5,5"/>
+
+                    <ListView x:Name="ListViewMenuFooter"
+                              HasUnevenRows="True"
+                              BackgroundColor="{StaticResource NavigationSecondary}"
+                              >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="5">
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                            <Image Source="iconsHome.png" WidthRequest="25" HeightRequest="25"/>
+                                            <Label Text="{Binding Title}" FontSize="Default" TextColor="White" FontAttributes="Bold" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                </StackLayout>
+            </ListView.Footer>
         </ListView>
+        
     </StackLayout>
 </ContentPage>

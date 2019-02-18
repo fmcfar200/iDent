@@ -57,7 +57,6 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\bin\Debug\System.ServiceM
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\bin\Debug\System.Web.Services.pdb
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\bin\Debug\Mono.Security.pdb
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\bin\Debug\iDent.dll.mdb
-C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\logo.png
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\aboutheaderph.jpg
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\headshotpl.jpg
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\bin\Debug\Plugin.Messaging.Abstractions.pdb
@@ -115,6 +114,8 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\asse
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\gallery03.png
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\gallery01.png
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\gallery02.png
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\identlogo100.png
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\iconshome.png
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\bin\Debug\netstandard2.0\iDent.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\bin\Debug\iDent.dll.mdb
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\linksrc\iDent.dll.mdb
