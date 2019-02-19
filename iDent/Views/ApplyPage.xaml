@@ -3,8 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="iDent.Views.ApplyPage">
     <ContentPage.Content>
-        <StackLayout>
-            <WebView Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=191&amp;courseid&amp;gopage&#61;0" VerticalOptions="FillAndExpand"/>
+        <StackLayout Margin="20">
+            <Label Text="JavaScript Test" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Button x:Name="_callJavaScriptButton" Text="Call JavaScript" Clicked="OnCallJavaScriptButtonClicked" />
+            <Label x:Name="_resultLabel" />
+            <WebView x:Name="_webView" Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=62&amp;courseid&amp;gopage=0"
+                     VerticalOptions="FillAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
