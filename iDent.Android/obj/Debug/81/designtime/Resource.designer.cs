@@ -3589,14 +3589,14 @@ namespace iDent.Droid
 			// aapt resource value: 0x7F050004
 			public const int colorPrimaryDark = 2131034116;
 			
-			// aapt resource value: 0x7F050014
-			public const int default_circle_indicator_fill_color = 2131034132;
-			
-			// aapt resource value: 0x7F050015
-			public const int default_circle_indicator_page_color = 2131034133;
-			
 			// aapt resource value: 0x7F050016
-			public const int default_circle_indicator_stroke_color = 2131034134;
+			public const int default_circle_indicator_fill_color = 2131034134;
+			
+			// aapt resource value: 0x7F050017
+			public const int default_circle_indicator_page_color = 2131034135;
+			
+			// aapt resource value: 0x7F050018
+			public const int default_circle_indicator_stroke_color = 2131034136;
 			
 			// aapt resource value: 0x7F060027
 			public const int design_bottom_navigation_shadow_color = 2131099687;
@@ -3660,6 +3660,12 @@ namespace iDent.Droid
 			
 			// aapt resource value: 0x7F050002
 			public const int launcher_background = 2131034114;
+			
+			// aapt resource value: 0x7F050007
+			public const int ListViewHighlighted = 2131034119;
+			
+			// aapt resource value: 0x7F050006
+			public const int ListViewSelected = 2131034118;
 			
 			// aapt resource value: 0x7F06003B
 			public const int material_blue_grey_800 = 2131099707;
@@ -3772,29 +3778,29 @@ namespace iDent.Droid
 			// aapt resource value: 0x7F06005F
 			public const int tooltip_background_light = 2131099743;
 			
-			// aapt resource value: 0x7F050006
-			public const int vpi__background_holo_dark = 2131034118;
-			
-			// aapt resource value: 0x7F050007
-			public const int vpi__background_holo_light = 2131034119;
-			
-			// aapt resource value: 0x7F050010
-			public const int vpi__bright_foreground_disabled_holo_dark = 2131034128;
-			
-			// aapt resource value: 0x7F050011
-			public const int vpi__bright_foreground_disabled_holo_light = 2131034129;
-			
 			// aapt resource value: 0x7F050008
-			public const int vpi__bright_foreground_holo_dark = 2131034120;
+			public const int vpi__background_holo_dark = 2131034120;
 			
 			// aapt resource value: 0x7F050009
-			public const int vpi__bright_foreground_holo_light = 2131034121;
+			public const int vpi__background_holo_light = 2131034121;
 			
 			// aapt resource value: 0x7F050012
-			public const int vpi__bright_foreground_inverse_holo_dark = 2131034130;
+			public const int vpi__bright_foreground_disabled_holo_dark = 2131034130;
 			
 			// aapt resource value: 0x7F050013
-			public const int vpi__bright_foreground_inverse_holo_light = 2131034131;
+			public const int vpi__bright_foreground_disabled_holo_light = 2131034131;
+			
+			// aapt resource value: 0x7F050010
+			public const int vpi__bright_foreground_holo_dark = 2131034128;
+			
+			// aapt resource value: 0x7F050011
+			public const int vpi__bright_foreground_holo_light = 2131034129;
+			
+			// aapt resource value: 0x7F050014
+			public const int vpi__bright_foreground_inverse_holo_dark = 2131034132;
+			
+			// aapt resource value: 0x7F050015
+			public const int vpi__bright_foreground_inverse_holo_light = 2131034133;
 			
 			static Color()
 			{
@@ -4596,8 +4602,8 @@ namespace iDent.Droid
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010010
-			public const int Down = 2130771984;
+			// aapt resource value: 0x7F010019
+			public const int Down = 2130771993;
 			
 			// aapt resource value: 0x7F010003
 			public const int Gallery01 = 2130771971;
@@ -4611,8 +4617,35 @@ namespace iDent.Droid
 			// aapt resource value: 0x7F010006
 			public const int headshotPL = 2130771974;
 			
-			// aapt resource value: 0x7F010007
-			public const int iconsHome = 2130771975;
+			// aapt resource value: 0x7F010009
+			public const int ic_action_about = 2130771977;
+			
+			// aapt resource value: 0x7F010010
+			public const int ic_action_apply = 2130771984;
+			
+			// aapt resource value: 0x7F010011
+			public const int ic_action_contact = 2130771985;
+			
+			// aapt resource value: 0x7F010012
+			public const int ic_action_facebook = 2130771986;
+			
+			// aapt resource value: 0x7F010013
+			public const int ic_action_gallery = 2130771987;
+			
+			// aapt resource value: 0x7F010014
+			public const int ic_action_home = 2130771988;
+			
+			// aapt resource value: 0x7F010015
+			public const int ic_action_links = 2130771989;
+			
+			// aapt resource value: 0x7F010016
+			public const int ic_action_news = 2130771990;
+			
+			// aapt resource value: 0x7F010017
+			public const int ic_action_staff = 2130771991;
+			
+			// aapt resource value: 0x7F010018
+			public const int ic_action_twitter = 2130771992;
 			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
@@ -5145,8 +5178,8 @@ namespace iDent.Droid
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
 			
-			// aapt resource value: 0x7F010008
-			public const int identLogo100 = 2130771976;
+			// aapt resource value: 0x7F010007
+			public const int identLogo100 = 2130771975;
 			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;
@@ -5211,8 +5244,8 @@ namespace iDent.Droid
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
 			
-			// aapt resource value: 0x7F010011
-			public const int Next = 2130771985;
+			// aapt resource value: 0x7F010020
+			public const int Next = 2130772000;
 			
 			// aapt resource value: 0x7F090001
 			public const int notification_action_background = 2131296257;
@@ -5250,8 +5283,8 @@ namespace iDent.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010012
-			public const int Prev = 2130771986;
+			// aapt resource value: 0x7F010021
+			public const int Prev = 2130772001;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -5259,11 +5292,11 @@ namespace iDent.Droid
 			// aapt resource value: 0x7F09006A
 			public const int tooltip_frame_light = 2131296362;
 			
-			// aapt resource value: 0x7F010013
-			public const int Up = 2130771987;
+			// aapt resource value: 0x7F010022
+			public const int Up = 2130772002;
 			
-			// aapt resource value: 0x7F010009
-			public const int xamarin_logo = 2130771977;
+			// aapt resource value: 0x7F010008
+			public const int xamarin_logo = 2130771976;
 			
 			static Drawable()
 			{

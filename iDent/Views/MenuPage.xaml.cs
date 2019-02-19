@@ -20,26 +20,26 @@ namespace iDent.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="*Test Screen*" },
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Home" },
-                new HomeMenuItem {Id = MenuItemType.Apply, Title="Apply" },
-                new HomeMenuItem {Id = MenuItemType.StudentLinks, Title="Student Links"},
-                new HomeMenuItem {Id = MenuItemType.MeetTheStaff, Title="Meet the Staff" },
-                new HomeMenuItem {Id = MenuItemType.Gallery, Title="Gallery" },
-                new HomeMenuItem {Id = MenuItemType.StudentLinks, Title="Testimonials" },
-                new HomeMenuItem {Id = MenuItemType.ContactUs, Title="Contact Us" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About Us" }
+                new HomeMenuItem {Id = MenuItemType.Browse, Title="*Test Screen*", Icon="ic_action_home.png" },
+                new HomeMenuItem {Id = MenuItemType.Browse, Title="Home", Icon="ic_action_home.png" },
+                new HomeMenuItem {Id = MenuItemType.Apply, Title="Apply", Icon="ic_action_apply.png" },
+                new HomeMenuItem {Id = MenuItemType.StudentLinks, Title="Student Links", Icon="ic_action_links.png"},
+                new HomeMenuItem {Id = MenuItemType.MeetTheStaff, Title="Meet the Staff",Icon="ic_action_staff.png" },
+                new HomeMenuItem {Id = MenuItemType.Gallery, Title="Gallery", Icon="ic_action_gallery.png" },
+                new HomeMenuItem {Id = MenuItemType.StudentLinks, Title="Testimonials", Icon="ic_action_links.png" },
+                new HomeMenuItem {Id = MenuItemType.ContactUs, Title="Contact Us", Icon="ic_action_contact.png" },
+                new HomeMenuItem {Id = MenuItemType.About, Title="About Us", Icon="ic_action_about.png" }
             };
 
             menuFooterItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Facebook, Title = "Facebook"},
-                new HomeMenuItem {Id = MenuItemType.Twitter, Title = "Twitter"},
+                new HomeMenuItem {Id = MenuItemType.Facebook, Title = "Facebook", Icon="ic_action_facebook.png"},
+                new HomeMenuItem {Id = MenuItemType.Twitter, Title = "Twitter", Icon="ic_action_twitter.png"},
 
             };
 
             ListViewMenu.ItemsSource = menuItems;
-            ListViewMenu.SelectedItem = menuItems[0];
+            ListViewMenu.SelectedItem = menuItems[8];
             ListViewMenu.ItemSelected += async (sender, e) =>
             {
                 if (e.SelectedItem == null)
