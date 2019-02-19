@@ -1313,9 +1313,11 @@ int layout tabbar 0x7f040042
 int layout toolbar 0x7f040043
 int layout tooltip 0x7f040044
 int layout vertical_viewpager 0x7f040045
-int mipmap icon 0x7f030000
-int mipmap icon_round 0x7f030001
-int mipmap launcher_foreground 0x7f030002
+int mipmap ic_launcher_foreground 0x7f030000
+int mipmap ic_launcher_round 0x7f030001
+int mipmap ic_launcher_square 0x7f030002
+int mipmap icon 0x7f030003
+int mipmap icon_round 0x7f030004
 int string abc_action_bar_home_description 0x7f0a0015
 int string abc_action_bar_up_description 0x7f0a0016
 int string abc_action_menu_overflow_description 0x7f0a0017

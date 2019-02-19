@@ -6174,7 +6174,13 @@ namespace iDent.Droid
 			public const int icon_round = 2130968579;
 			
 			// aapt resource value: 0x7F040004
-			public const int launcher_foreground = 2130968580;
+			public const int ic_launcher_foreground = 2130968580;
+			
+			// aapt resource value: 0x7F040005
+			public const int ic_launcher_round = 2130968581;
+			
+			// aapt resource value: 0x7F040006
+			public const int ic_launcher_square = 2130968582;
 			
 			static Mipmap()
 			{
