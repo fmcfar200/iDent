@@ -111,6 +111,7 @@ class MonoPackageManager_Resources {
 		"CarouselView.FormsPlugin.Android.dll",
 		"Com.Android.DeskClock.dll",
 		"Com.ViewPagerIndicator.dll",
+		"ExpandableView.dll",
 		"FormsViewGroup.dll",
 		"iDent.dll",
 		"Plugin.Messaging.Abstractions.dll",

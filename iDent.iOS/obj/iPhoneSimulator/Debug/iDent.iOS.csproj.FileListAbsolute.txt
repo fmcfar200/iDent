@@ -67,3 +67,4 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\Sys
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.Abstractions.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.Abstractions.pdb
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\Plugin.Messaging.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.iOS\bin\iPhoneSimulator\Debug\ExpandableView.dll

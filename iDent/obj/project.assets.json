@@ -11,6 +11,18 @@
           "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll": {}
         }
       },
+      "ExpandableView/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/ExpandableView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ExpandableView.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -89,6 +101,21 @@
         "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll",
         "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll"
+      ]
+    },
+    "ExpandableView/1.0.3": {
+      "sha512": "VZonOweTkBwsTe2kKPJ4zIvIeB08JapsxJyKINit3obW6y6PXdECz+rRXWVH1c7e/akBBBL30e1zgG4/BmYxUQ==",
+      "type": "package",
+      "path": "expandableview/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "expandableview.1.0.3.nupkg.sha512",
+        "expandableview.nuspec",
+        "lib/MonoAndroid10/ExpandableView.dll",
+        "lib/Xamarin.iOS10/ExpandableView.dll",
+        "lib/netstandard2.0/ExpandableView.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/ExpandableView.dll"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -426,6 +453,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "CarouselView.FormsPlugin >= 5.2.0",
+      "ExpandableView >= 1.0.3",
       "NETStandard.Library >= 2.0.3",
       "Xam.Plugins.Messaging >= 5.2.0",
       "Xamarin.Forms >= 3.4.0.1008975"
@@ -475,6 +503,10 @@
           "CarouselView.FormsPlugin": {
             "target": "Package",
             "version": "[5.2.0, )"
+          },
+          "ExpandableView": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

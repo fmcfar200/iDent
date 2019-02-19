@@ -2,6 +2,7 @@ CarouselView.FormsPlugin.Abstractions
 CarouselView.FormsPlugin.Android
 Com.Android.DeskClock
 Com.ViewPagerIndicator
+ExpandableView
 FormsViewGroup
 iDent
 Plugin.Messaging.Abstractions
