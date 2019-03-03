@@ -3,50 +3,111 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="iDent.Views.TeamPage"
              xmlns:vm="clr-namespace:iDent.ViewModels"
-             Title="{Binding Title}">           
+             Title="{Binding Title}"
+             BackgroundColor="{StaticResource NavigationSecondary}">
 
     <ContentPage.BindingContext>
         <vm:TeamViewModel />
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
+        
         <StackLayout>
-            <Grid HorizontalOptions="CenterAndExpand"
+            <Image Source="tp_ph.jpg"/>
+
+            <ListView x:Name="EmployeeListView" HasUnevenRows="True" ItemTapped="OnTap"  SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid HorizontalOptions="CenterAndExpand"
+                              Padding="25,25,25,25"
+                              RowSpacing="25">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Row="0"
+                                           Grid.Column="0"
+                                            HorizontalOptions="CenterAndExpand"
+                                           VerticalOptions="CenterAndExpand"
+                                   Source="{Binding DisplayImage}"/>
+                                    <StackLayout x:Name="nameLabelLayout" Orientation="Vertical" Grid.Row="0" Grid.Column="0" VerticalOptions="End" HorizontalOptions="FillAndExpand" BackgroundColor="#80000000" IsVisible="{Binding NameVisible}">
+                                        <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center" TextColor="White" />
+                                        <Label Text="{Binding Role}" HorizontalOptions="Center" TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout x:Name="descriptionLabelLayout" 
+                                                 Orientation="Vertical" Grid.Row="0" Grid.Column="0" 
+                                                 VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
+                                                 BackgroundColor="#80000000"
+                                                IsVisible="{Binding DescVisible}">
+                                        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                                            <Label Text="{Binding Desc}" 
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="Center"
+                                                   VerticalTextAlignment="Center"
+                                                   TextColor="White"
+                                                   LineBreakMode="WordWrap">
+                                                
+
+                                            </Label>
+                                        </StackLayout>
+
+                                    </StackLayout>
+
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                       
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            
+                   
+                <!--<Grid HorizontalOptions="CenterAndExpand"
                   Padding="25,25,25,25"
                   RowSpacing="25">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0">
-                    <Image Source="headshotPL.jpg" HeightRequest="150"/>
-                    <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
-                    <Label Text="Senior Pension Captain" HorizontalOptions="Center"/>
-                </StackLayout>
-                <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1">
-                    <Image Source="headshotPL.jpg" HeightRequest="150"/>
-                    <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
-                    <Label Text="Senior Pension Captain" HorizontalOptions="Center"/>
-                </StackLayout>
-                <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0">
-                    <Image Source="headshotPL.jpg" HeightRequest="150"/>
-                    <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
-                    <Label Text="Senior Pension Captain" HorizontalOptions="Center"/>
-                </StackLayout>
-                <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1">
-                    <Image Source="headshotPL.jpg" HeightRequest="150"/>
-                    <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center"/>
-                    <Label Text="Senior Pension Captain" HorizontalOptions="Center"/>
-                </StackLayout>
-              
-            </Grid>
-            
-            
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="image1" Source="headshotPL.jpg"  Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
+                    <StackLayout x:Name="nameLabelLayout" Orientation="Vertical" Grid.Row="0" Grid.Column="0" VerticalOptions="End" HorizontalOptions="FillAndExpand" BackgroundColor="#80000000">
+                        <Label Text="Matthew Glen" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center" TextColor="White" />
+                        <Label Text="Pension Administrator" HorizontalOptions="Center" TextColor="White"/>
+                    </StackLayout>
+
+                    <StackLayout x:Name="descriptionLabelLayout" 
+                                 Orientation="Vertical" Grid.Row="0" Grid.Column="0" 
+                                 VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
+                                 BackgroundColor="#80000000"
+                                 IsVisible="False">
+                        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                            <Label Text="This is the description. This is the description." 
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               VerticalTextAlignment="Center"
+                               TextColor="White"
+                                   WidthRequest="150">
+                            </Label>
+                        </StackLayout>
+                       
+                    </StackLayout>
+                  
+
+
+                </Grid>-->
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

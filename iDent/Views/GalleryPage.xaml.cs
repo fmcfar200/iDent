@@ -12,6 +12,7 @@ namespace iDent.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GalleryPage : ContentPage
     {
+        
         public GalleryPage()
         {
             InitializeComponent();

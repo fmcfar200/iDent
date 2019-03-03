@@ -4,6 +4,7 @@ using System.Linq;
 using CarouselView.FormsPlugin.iOS;
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
 
 namespace iDent.iOS
 {
@@ -22,6 +23,7 @@ namespace iDent.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+
             global::Xamarin.Forms.Forms.Init();
             InitControls();
             LoadApplication(new App());

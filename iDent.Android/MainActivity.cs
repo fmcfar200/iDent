@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using CarouselView.FormsPlugin.Android;
+using Xamarin.Forms;
 
 namespace iDent.Droid
 {
@@ -19,7 +20,9 @@ namespace iDent.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
             InitControls();
+
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
