@@ -19,3 +19,4 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\Co
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\GalleryPage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ApplyPage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\StudentLinksPage.xaml.g.cs

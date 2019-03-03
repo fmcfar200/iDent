@@ -44,6 +44,9 @@ namespace iDent.Views
                     case (int)MenuItemType.Apply:
                         MenuPages.Add(id, new NavigationPage(new ApplyPage()));
                         break;
+                    case (int)MenuItemType.StudentLinks:
+                        MenuPages.Add(id, new NavigationPage(new StudentLinksPage()));
+                        break;
 
                 }
             }
