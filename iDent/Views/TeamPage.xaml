@@ -34,6 +34,7 @@
                                            Grid.Column="0"
                                             HorizontalOptions="CenterAndExpand"
                                            VerticalOptions="CenterAndExpand"
+                                           Aspect="AspectFill"
                                    Source="{Binding DisplayImage}"/>
                                     <StackLayout x:Name="nameLabelLayout" Orientation="Vertical" Grid.Row="0" Grid.Column="0" VerticalOptions="End" HorizontalOptions="FillAndExpand" BackgroundColor="#80000000" IsVisible="{Binding NameVisible}">
                                         <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Center" TextColor="White" />

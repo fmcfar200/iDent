@@ -20,14 +20,20 @@ namespace iDent.Views
 		{
 			InitializeComponent ();
             linksCollection.Add(new Link("http://www.identtraining.com/","Ident Training.com","Gallery03.png"));
+            linksCollection.Add(new Link("https://moodle.com/", "Moodle.com", "moodle.png"));
+
 
             LinksListView.ItemsSource = linksCollection;
+            LinksListView.ItemTapped += (sender, e) =>
+            {
+                Link link = (Link)e.Item;
+                Device.OpenUri(new Uri(link.URL));
+       
+            };
 
 
-		}
-
-        private void OnTap()
-        {
         }
+
+        
 	}
 }

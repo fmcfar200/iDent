@@ -28,6 +28,7 @@ namespace iDent.Views
             string result = await _webView.EvaluateJavaScriptAsync("document.getElementsByClassName('error')[0].innerHTML");
 
             _resultLabel.Text = result;
+            await DisplayAlert("Error Message: ", result, "OK");
 
         }
 
