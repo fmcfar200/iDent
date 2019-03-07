@@ -4,11 +4,8 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent\bin\Debug\netstandard2.0\iDent.pd
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\iDent.csprojAssemblyReference.cache
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
-C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
-C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\iDent.csproj.CoreCompileInputs.cache
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\iDent.AssemblyInfoInputs.cache
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\iDent.AssemblyInfo.cs

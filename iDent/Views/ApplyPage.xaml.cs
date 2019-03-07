@@ -25,11 +25,13 @@ namespace iDent.Views
         {
            
             await _webView.EvaluateJavaScriptAsync($"document.getElementById('textfield_1').value = {10}; document.getElementsByName('savevalues')[0].click()");
-            string result = await _webView.EvaluateJavaScriptAsync("document.getElementsByClassName('error')[0].innerHTML");
 
-            _resultLabel.Text = result;
-            await DisplayAlert("Error Message: ", result, "OK");
+        }
 
+        async void webviewNavigated(object sender, WebNavigatingEventArgs e)
+        {
+            string result = await _webView.EvaluateJavaScriptAsync("document.getElementById('yui_3_17_2_1_1551722973698_37').innerHTML");
+            await DisplayAlert("Navigated", result, "OK");
         }
 
         //string result = await _webView.EvaluateJavaScriptAsync("document.getElementsByName('savevalues')[0].click()");
