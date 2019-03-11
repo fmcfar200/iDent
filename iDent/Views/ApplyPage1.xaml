@@ -2,7 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="iDent.Views.ApplyPage1"
+             xmlns:vm="clr-namespace:iDent.ViewModels"
+
              BackgroundColor="{StaticResource NavigationSecondary}">
+    
+    <ContentPage.BindingContext>
+        <vm:ApplyPage1ViewModel />
+    </ContentPage.BindingContext>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -56,7 +62,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Picker Title="Select a Course/Award" BackgroundColor="#224F5F"  />
+                <Picker x:Name="CoursePicker" Title="Select a Course/Award" ItemsSource="{Binding CoursePickerList}" BackgroundColor="#224F5F"  />
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -80,7 +86,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Name" BackgroundColor="#224F5F"/>
+                <Entry x:Name="NameEntry" Placeholder="Name" BackgroundColor="#224F5F"/>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -103,10 +109,10 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="House Number/Name" BackgroundColor="#224F5F"/>
-                <Entry Placeholder="Street" BackgroundColor="#224F5F"/>
-                <Entry Placeholder="Town/City" BackgroundColor="#224F5F"/>
-                <Entry Placeholder="County" BackgroundColor="#224F5F"/>
+                <Entry x:Name="HouseNumberEntry" Placeholder="House Number/Name" BackgroundColor="#224F5F"/>
+                <Entry x:Name="StreetEntry" Placeholder="Street" BackgroundColor="#224F5F"/>
+                <Entry x:Name="TownEntry" Placeholder="Town/City" BackgroundColor="#224F5F"/>
+                <Entry x:Name="CountyEntry" Placeholder="County" BackgroundColor="#224F5F"/>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -129,7 +135,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <DatePicker BackgroundColor="#224F5F" />
+                <DatePicker x:Name="DOBPicker" BackgroundColor="#224F5F" />
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -152,7 +158,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Email" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmailEntry" Placeholder="Email" BackgroundColor="#224F5F"/>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -170,13 +176,11 @@
                         <FormattedString>
                             <FormattedString.Spans>
                                 <Span Text="Home Telephone Number:"/>
-                                <Span Text=" "/>
-                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Telephone" BackgroundColor="#224F5F"/>
+                <Entry x:Name="HomeTelEntry" Placeholder="Telephone" BackgroundColor="#224F5F"/>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -193,13 +197,11 @@
                         <FormattedString>
                             <FormattedString.Spans>
                                 <Span Text="Mobile Telephone Number:"/>
-                                <Span Text=" "/>
-                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Mobile" BackgroundColor="#224F5F"/>
+                <Entry x:Name="MobileTelEntry" Placeholder="Mobile" BackgroundColor="#224F5F"/>
                 <Label TextColor="White">
                     <Label.FormattedText>
                         <FormattedString>

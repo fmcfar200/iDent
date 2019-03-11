@@ -5,23 +5,34 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using iDent.Models;
+using iDent.ViewModels;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using System.Text.RegularExpressions;
+
 namespace iDent.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ApplyPage1 : ContentPage
-	{
-		public ApplyPage1 ()
-		{
-			InitializeComponent ();
-		}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ApplyPage1 : ContentPage
+    {
+        ApplicationForm applicationForm = new ApplicationForm();
+
+        public ApplyPage1()
+        {
+            InitializeComponent();
+
+        }
 
         async void OnNextPageButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ApplyPage2());
+        { 
+            int i = CoursePicker.SelectedIndex + 1;
+            applicationForm.CourseNumber = i;
+            await Navigation.PushAsync(new ApplyPage2(applicationForm));
+           
+            
         }
 
 
@@ -40,5 +51,7 @@ namespace iDent.Views
 
         //string result = await _webView.EvaluateJavaScriptAsync("document.getElementsByName('savevalues')[0].click()");
 
+
     }
+    
 }
