@@ -24,6 +24,7 @@
         <ListView x:Name="ListViewMenu"
                     HasUnevenRows="True"
                     BackgroundColor="{StaticResource NavigationSecondary}"
+                  
                    >
             <ListView.ItemTemplate>
                 <DataTemplate>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iDent.Views.ApplyPage3"
+             BackgroundColor="{StaticResource NavigationSecondary}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="5">
+
+                <!--EMPLOYER YOU HEADER-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Current Employer Details (if relevant)" FontSize="22" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Required fields are marked" FontSize="Default" />
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--EMPLYER NAME PICKER-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Employer Name:"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Employer Name" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+                <!-- EMPLOYER ADDRESS ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Employer Address:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Number/Name" BackgroundColor="#224F5F"/>
+                <Entry Placeholder="Street" BackgroundColor="#224F5F"/>
+                <Entry Placeholder="Town/City" BackgroundColor="#224F5F"/>
+                <Entry Placeholder="County" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--Emplyer number ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Employer Contact Number:"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Contact Number" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+
+                    <Button 
+                    Text="Previous"
+                    TextColor="White"
+                    HorizontalOptions="Start" 
+                    BackgroundColor="{StaticResource NavigationPrimary}"
+                    
+                    Clicked="OnPreviousPageButtonClicked"
+                   />
+
+                    <Button 
+                    Text="Review"
+                    TextColor="White"
+                    HorizontalOptions="End" 
+                    BackgroundColor="{StaticResource NavigationPrimary}"
+                    
+                    Clicked="OnNextPageButtonClicked"
+                   />
+
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </ScrollView>
+
+
+    </Grid>
+
+
+</ContentPage>

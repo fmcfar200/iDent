@@ -50,7 +50,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Name" BackgroundColor="#224F5F" />
+                <Entry Placeholder="Name" BackgroundColor="#224F5F"  />
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>

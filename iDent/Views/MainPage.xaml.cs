@@ -39,7 +39,7 @@ namespace iDent.Views
                         MenuPages.Add(id, new NavigationPage(new GalleryPage()));
                         break;
                     case (int)MenuItemType.Apply:
-                        MenuPages.Add(id, new NavigationPage(new ApplyPage()));
+                        MenuPages.Add(id, new NavigationPage(new ApplyPage1()));
                         break;
                     case (int)MenuItemType.StudentLinks:
                         MenuPages.Add(id, new NavigationPage(new StudentLinksPage()));

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iDent.Views.ApplyPage1"
+             BackgroundColor="{StaticResource NavigationSecondary}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="5">
+
+                <!--ABOUT YOU HEADER-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="About You" FontSize="22" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Required fields are marked" FontSize="Default" />
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+                <!--COURSE PICKER-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Course/Award Applying For:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Picker Title="Select a Course/Award" BackgroundColor="#224F5F"  />
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+                
+                <!--NAME ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Name:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Name" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--ADRESS ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Address:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="House Number/Name" BackgroundColor="#224F5F"/>
+                <Entry Placeholder="Street" BackgroundColor="#224F5F"/>
+                <Entry Placeholder="Town/City" BackgroundColor="#224F5F"/>
+                <Entry Placeholder="County" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--DOB ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Date of Birth:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <DatePicker BackgroundColor="#224F5F" />
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--EMAIL ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Email:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Email" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+                <!--HOME TEL ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Home Telephone Number:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Telephone" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--MOBILE ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Mobile Telephone Number:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Mobile" BackgroundColor="#224F5F"/>
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+
+
+                <Button 
+                    Text="Next"
+                    TextColor="White"
+                    HorizontalOptions="End" 
+                    Margin="0,15,0,0"
+                    BackgroundColor="{StaticResource NavigationPrimary}"
+                    
+                    Clicked="OnNextPageButtonClicked"
+                   />
+            </StackLayout>
+
+
+        </ScrollView>
+
+
+    </Grid>
+
+</ContentPage>
+
+
+
+<!--<WebView x:Name="_webView" Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=62&amp;courseid&amp;gopage=0"
+                     VerticalOptions="FillAndExpand"/>-->

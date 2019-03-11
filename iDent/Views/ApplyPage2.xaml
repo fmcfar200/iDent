@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iDent.Views.ApplyPage2"
+             
+             BackgroundColor="{StaticResource NavigationSecondary}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="5">
+
+                <!--QUALIFICATIONS YOU HEADER-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Qualifications" FontSize="22" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Required fields are marked" FontSize="Default" />
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--SCHOOL PICKER-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Academic (School/College etc):"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Editor BackgroundColor="#224F5F" HeightRequest="128"  />
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+                <!-- QUALIFICATIONS ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Further Qualifications (Courses/Workbased etc):"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Editor BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--SCN ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Scottish Candidate Number (SCN) if known:"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--REASON FOR APPLYING ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Reason for Applying - Why do you want to take part in this course?:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Editor BackgroundColor="#224F5F" HeightRequest="128" />
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--WHERE DID YOU HEAR ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Where did you hear about this course?:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Where did you hear about this course" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+                <!--HOME TEL ENTRY-->
+                <Label TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Home Telephone Number:"/>
+                                <Span Text=" "/>
+                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Telephone" BackgroundColor="#224F5F"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+
+                    <Button 
+                    Text="Previous"
+                    TextColor="White"
+                    HorizontalOptions="Start" 
+                    BackgroundColor="{StaticResource NavigationPrimary}"
+                    
+                    Clicked="OnPreviousPageButtonClicked"
+                   />
+                    
+                    <Button 
+                    Text="Next"
+                    TextColor="White"
+                    HorizontalOptions="End" 
+                    BackgroundColor="{StaticResource NavigationPrimary}"
+                    
+                    Clicked="OnNextPageButtonClicked"
+                   />
+
+                </StackLayout>
+
+                
+            </StackLayout>
+
+
+        </ScrollView>
+
+
+    </Grid>
+
+</ContentPage>
