@@ -17,8 +17,36 @@ namespace iDent.Views {
     public partial class ApplyPage2 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Editor SchoolEditor;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Editor QualificationsEditor;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry SCNEditor;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry ReasonsEditor;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation ReasonsBehaviour;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry WhereDidYouHearEditor;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation WhereDidYouHearBehaviour;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ApplyPage2));
+            SchoolEditor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Editor>(this, "SchoolEditor");
+            QualificationsEditor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Editor>(this, "QualificationsEditor");
+            SCNEditor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "SCNEditor");
+            ReasonsEditor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "ReasonsEditor");
+            ReasonsBehaviour = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "ReasonsBehaviour");
+            WhereDidYouHearEditor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "WhereDidYouHearEditor");
+            WhereDidYouHearBehaviour = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "WhereDidYouHearBehaviour");
         }
     }
 }

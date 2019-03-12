@@ -27,45 +27,4 @@ namespace iDent.ViewModels
 
         public List<string> CoursePickerList { get; }
     }
-
-    public interface IValidationRule<T>
-    {
-        string ValidationMessage { get; set; }
-        bool Check(T value);
-    }
-
-    public class IsNotNullOrEmptyRule<T> : IValidationRule<T>
-    {
-        public string ValidationMessage { get; set; }
-
-        public bool Check(T value)
-        {
-            if (value == null)
-            {
-                return false;
-            }
-
-            var str = value as string;
-            return !string.IsNullOrWhiteSpace(str);
-        }
-    }
-
-    public class EmailRule<T> : IValidationRule<T>
-    {
-        public string ValidationMessage { get; set; }
-
-        public bool Check(T value)
-        {
-            if (value == null)
-            {
-                return false;
-            }
-
-            var str = value as string;
-            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            Match match = regex.Match(str);
-
-            return match.Success;
-        }
-    }
 }

@@ -54,7 +54,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Employer Name" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmployerNameEntry" Placeholder="Employer Name" BackgroundColor="#224F5F"/>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -78,10 +78,13 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Number/Name" BackgroundColor="#224F5F"/>
-                <Entry Placeholder="Street" BackgroundColor="#224F5F"/>
-                <Entry Placeholder="Town/City" BackgroundColor="#224F5F"/>
-                <Entry Placeholder="County" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmployerStreetNumberEntry" Placeholder="Number/Name" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmployerStreetNameEntry" Placeholder="Street" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmployerTownEntry" Placeholder="Town/City" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmployerCountyEntry" Placeholder="County" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmployerCountryEntry" Placeholder="Country" Text="United Kingdom" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmployerPostcodeEntry" Placeholder="Postcode" BackgroundColor="#224F5F"/>
+
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -102,7 +105,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Contact Number" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmployerContactEntry"  Placeholder="Contact Number" BackgroundColor="#224F5F"/>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>

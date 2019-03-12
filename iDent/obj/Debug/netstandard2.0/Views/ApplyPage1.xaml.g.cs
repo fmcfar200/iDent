@@ -23,22 +23,52 @@ namespace iDent.Views {
         private global::Xamarin.Forms.Entry NameEntry;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation NameEntryBehaviour;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry HouseNumberEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation houseNumberBehavior;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry StreetEntry;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation streetNameBehavior;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry TownEntry;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation townNameBehavior;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry CountyEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation countyNameBehavior;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry CountryEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation countryBehavior;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry PostcodeEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.IsNotNullOrEmptyValidation postcodeBehavior;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.DatePicker DOBPicker;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry EmailEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::iDent.Services.EmailValidationBehavior EmailValidation;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry HomeTelEntry;
@@ -51,12 +81,22 @@ namespace iDent.Views {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ApplyPage1));
             CoursePicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "CoursePicker");
             NameEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "NameEntry");
+            NameEntryBehaviour = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "NameEntryBehaviour");
             HouseNumberEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "HouseNumberEntry");
+            houseNumberBehavior = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "houseNumberBehavior");
             StreetEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "StreetEntry");
+            streetNameBehavior = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "streetNameBehavior");
             TownEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TownEntry");
+            townNameBehavior = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "townNameBehavior");
             CountyEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "CountyEntry");
+            countyNameBehavior = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "countyNameBehavior");
+            CountryEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "CountryEntry");
+            countryBehavior = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "countryBehavior");
+            PostcodeEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "PostcodeEntry");
+            postcodeBehavior = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.IsNotNullOrEmptyValidation>(this, "postcodeBehavior");
             DOBPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DatePicker>(this, "DOBPicker");
             EmailEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "EmailEntry");
+            EmailValidation = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::iDent.Services.EmailValidationBehavior>(this, "EmailValidation");
             HomeTelEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "HomeTelEntry");
             MobileTelEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "MobileTelEntry");
         }
