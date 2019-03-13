@@ -18,12 +18,19 @@ namespace iDent.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ApplyPage1 : ContentPage
     {
-        ApplicationForm applicationForm = new ApplicationForm();
+        public ApplicationForm applicationForm = new ApplicationForm();
 
         public ApplyPage1()
         {
             InitializeComponent();
            
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            System.Diagnostics.Debug.WriteLine(applicationForm.SchoolCollege);
+
         }
 
         async void OnNextPageButtonClicked(object sender, EventArgs e)
@@ -52,16 +59,16 @@ namespace iDent.Views
 
 
 
-                System.Diagnostics.Debug.WriteLine(
-                    applicationForm.CourseNumber + "\n" + 
-                    applicationForm.DateOfApplication + "\n" +
-                    applicationForm.Name + "\n" + "\n" +
-                    applicationForm.Address + "\n" + "\n" +
-                    applicationForm.DOB + "\n" +
-                    applicationForm.email + "\n" +
-                    applicationForm.HomeNumber+ "\n" +
-                    applicationForm.MobileNumber
-                    );
+                //System.Diagnostics.Debug.WriteLine(
+                //    applicationForm.CourseNumber + "\n" + 
+                //    applicationForm.DateOfApplication + "\n" +
+                //    applicationForm.Name + "\n" + "\n" +
+                //    applicationForm.Address + "\n" + "\n" +
+                //    applicationForm.DOB + "\n" +
+                //    applicationForm.email + "\n" +
+                //    applicationForm.HomeNumber+ "\n" +
+                //    applicationForm.MobileNumber
+                //    );
 
                 await Navigation.PushAsync(new ApplyPage2(applicationForm));
 

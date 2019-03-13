@@ -14,6 +14,7 @@ namespace iDent.Views
 	public partial class ApplyPage2 : ContentPage
 	{
         ApplicationForm applicationForm = new ApplicationForm();
+
 		public ApplyPage2 (ApplicationForm appForm)
 		{
 			InitializeComponent ();
