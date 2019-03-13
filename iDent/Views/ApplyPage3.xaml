@@ -72,19 +72,11 @@
                         <FormattedString>
                             <FormattedString.Spans>
                                 <Span Text="Employer Address:"/>
-                                <Span Text=" "/>
-                                <Span Text="*" FontAttributes="Bold" TextColor="Red"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry x:Name="EmployerStreetNumberEntry" Placeholder="Number/Name" BackgroundColor="#224F5F"/>
-                <Entry x:Name="EmployerStreetNameEntry" Placeholder="Street" BackgroundColor="#224F5F"/>
-                <Entry x:Name="EmployerTownEntry" Placeholder="Town/City" BackgroundColor="#224F5F"/>
-                <Entry x:Name="EmployerCountyEntry" Placeholder="County" BackgroundColor="#224F5F"/>
-                <Entry x:Name="EmployerCountryEntry" Placeholder="Country" Text="United Kingdom" BackgroundColor="#224F5F"/>
-                <Entry x:Name="EmployerPostcodeEntry" Placeholder="Postcode" BackgroundColor="#224F5F"/>
-
+                <Editor x:Name="EmployerAddressEntry" Placeholder="Employer Address" BackgroundColor="#224F5F" HeightRequest="128"/>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>

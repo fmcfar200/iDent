@@ -23,19 +23,25 @@ namespace iDent.Views
         public ApplyPage1()
         {
             InitializeComponent();
+
+           
            
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            System.Diagnostics.Debug.WriteLine(applicationForm.SchoolCollege);
+
+
 
         }
 
+
         async void OnNextPageButtonClicked(object sender, EventArgs e)
         {
-            bool allValid = CoursePicker.SelectedItem != null && NameEntryBehaviour.isValid && EmailValidation.isValid && houseNumberBehavior.isValid &&
+            System.Diagnostics.Debug.WriteLine(applicationForm.Name);
+
+                bool allValid = CoursePicker.SelectedItem != null && NameEntryBehaviour.isValid && EmailValidation.isValid && houseNumberBehavior.isValid &&
                 streetNameBehavior.isValid && townNameBehavior.isValid && countyNameBehavior.isValid &&
                 postcodeBehavior.isValid;
 
@@ -48,29 +54,14 @@ namespace iDent.Views
                 string postcode = PostcodeEntry.Text;
                 string fullAddress = streetNumberAndName + "\n" + town + "\n" + county + "\n" + country + "\n" + postcode;
 
-                applicationForm.CourseNumber = CoursePicker.SelectedIndex + 1;
-                applicationForm.DateOfApplication = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
-                applicationForm.Name = NameEntry.Text;
-                applicationForm.Address = fullAddress;
-                applicationForm.DOB = DOBPicker.Date.Day + "/" + DOBPicker.Date.Month + "/" + DOBPicker.Date.Year;
-                applicationForm.email = EmailEntry.Text;
-                applicationForm.HomeNumber = HomeTelEntry.Text;
-                applicationForm.MobileNumber = MobileTelEntry.Text;
-
-
-
-                //System.Diagnostics.Debug.WriteLine(
-                //    applicationForm.CourseNumber + "\n" + 
-                //    applicationForm.DateOfApplication + "\n" +
-                //    applicationForm.Name + "\n" + "\n" +
-                //    applicationForm.Address + "\n" + "\n" +
-                //    applicationForm.DOB + "\n" +
-                //    applicationForm.email + "\n" +
-                //    applicationForm.HomeNumber+ "\n" +
-                //    applicationForm.MobileNumber
-                //    );
+                SaveValuesToApplObject(fullAddress);
 
                 await Navigation.PushAsync(new ApplyPage2(applicationForm));
+
+                MessagingCenter.Subscribe<ApplyPage2, ApplicationForm>(this, "GetApplicationPayload", (messageSender, arg) =>
+                {
+                    applicationForm = arg;
+                });
 
 
             }
@@ -80,6 +71,19 @@ namespace iDent.Views
                 return;
             }
         }
+
+        private void SaveValuesToApplObject(string fullAddress)
+        {
+            applicationForm.CourseNumber = CoursePicker.SelectedIndex + 1;
+            applicationForm.DateOfApplication = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
+            applicationForm.Name = NameEntry.Text;
+            applicationForm.Address = fullAddress;
+            applicationForm.DOB = DOBPicker.Date.Day + "/" + DOBPicker.Date.Month + "/" + DOBPicker.Date.Year;
+            applicationForm.email = EmailEntry.Text;
+            applicationForm.HomeNumber = HomeTelEntry.Text;
+            applicationForm.MobileNumber = MobileTelEntry.Text;
+        }
+
 
 
         //async void OnCallJavaScriptButtonClicked(object sender, EventArgs e)

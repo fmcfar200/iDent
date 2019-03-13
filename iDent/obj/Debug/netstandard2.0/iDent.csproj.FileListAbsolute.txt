@@ -14,8 +14,8 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\iDent.pd
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\TeamPage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ContactPage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\GalleryPage.xaml.g.cs
-C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\StudentLinksPage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ApplyPage1.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ApplyPage2.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ApplyPage3.xaml.g.cs
+C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\XamlC.stamp

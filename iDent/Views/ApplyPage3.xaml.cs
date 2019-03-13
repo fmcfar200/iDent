@@ -20,27 +20,29 @@ namespace iDent.Views
 		{
 			InitializeComponent ();
             applicationForm = appForm;
+
+            RefreshValues(applicationForm);
 		}
+
+        private void RefreshValues(ApplicationForm applicationForm)
+        {
+            EmployerNameEntry.Text = applicationForm.EmployerName;
+            EmployerAddressEntry.Text = applicationForm.EmployerAddress;
+            EmployerContactEntry.Text = applicationForm.EmployerNumber;
+        }
+
+        private void SaveValuesToApplyObject()
+        {
+            applicationForm.EmployerName = EmployerNameEntry.Text;
+            applicationForm.EmployerAddress = EmployerAddressEntry.Text;
+            applicationForm.EmployerNumber = EmployerContactEntry.Text;
+        }
 
         async void OnNextPageButtonClicked(object sender, EventArgs e)
         {
-            string employerStreetNameNumber = EmployerStreetNumberEntry.Text + " " + EmployerStreetNameEntry.Text;
-            string employerTown = EmployerTownEntry.Text;
-            string emplyerCounty = EmployerCountyEntry.Text;
-            string emplyerCountry = EmployerCountryEntry.Text;
-            string employerPostcode = EmployerPostcodeEntry.Text;
 
-            applicationForm.EmployerName = EmployerNameEntry.Text;
 
-            applicationForm.EmployerAddress =
-                employerStreetNameNumber + "\n" +
-                employerTown + "\n" +
-                emplyerCounty + "\n" +
-                emplyerCountry + "\n" +
-                employerPostcode;
-
-            applicationForm.EmployerNumber = EmployerContactEntry.Text;
-
+            SaveValuesToApplyObject();
 
             System.Diagnostics.Debug.WriteLine(
                     applicationForm.CourseNumber + "\n" +
@@ -71,7 +73,11 @@ namespace iDent.Views
 
         async void OnPreviousPageButtonClicked(object sender, EventArgs e)
         {
+            SaveValuesToApplyObject();
+            MessagingCenter.Send<ApplyPage3, ApplicationForm>(this, "GetApplicationPayload", applicationForm);
             await Navigation.PopAsync();
         }
+
+        
     }
 }
