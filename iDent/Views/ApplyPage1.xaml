@@ -19,7 +19,7 @@
 
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="5">
-
+                
                 <!--ABOUT YOU HEADER-->
                 <Label TextColor="White">
                     <Label.FormattedText>

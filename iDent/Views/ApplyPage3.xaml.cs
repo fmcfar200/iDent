@@ -38,7 +38,7 @@ namespace iDent.Views
             applicationForm.EmployerNumber = EmployerContactEntry.Text;
         }
 
-        async void OnNextPageButtonClicked(object sender, EventArgs e)
+        async void OnReviewPageButtonClicked(object sender, EventArgs e)
         {
 
 
@@ -65,6 +65,8 @@ namespace iDent.Views
                     applicationForm.EmployerNumber
                    
                     );
+
+            await Navigation.PushAsync(new ApplyPageReview(applicationForm));
 
 
 

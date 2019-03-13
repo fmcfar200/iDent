@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iDent.Views.ApplyPageReview">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="5">
+
+                <!--EMPLOYER YOU HEADER-->
+                <Label TextColor="Black">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Review Details" FontSize="22" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text=" "/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Button Clicked="Button_ClickedAsync" />
+                <WebView x:Name="_webView" Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=191&amp;courseid&amp;gopage=0"
+                     VerticalOptions="FillAndExpand"/>
+                
+            </StackLayout>
+
+
+        </ScrollView>
+
+
+    </Grid>
+
+</ContentPage>
