@@ -25,7 +25,6 @@ namespace iDent.Views
                 new HomeMenuItem {Id = MenuItemType.StudentLinks, Title="Student Links", Icon="ic_action_links.png"},
                 new HomeMenuItem {Id = MenuItemType.MeetTheStaff, Title="Meet the Staff",Icon="ic_action_staff.png" },
                 new HomeMenuItem {Id = MenuItemType.Gallery, Title="Gallery", Icon="ic_action_gallery.png" },
-                new HomeMenuItem {Id = MenuItemType.StudentLinks, Title="Testimonials", Icon="ic_action_links.png" },
                 new HomeMenuItem {Id = MenuItemType.ContactUs, Title="Contact Us", Icon="ic_action_contact.png" },
                 new HomeMenuItem {Id = MenuItemType.About, Title="About Us", Icon="ic_action_about.png" }
             };
@@ -38,7 +37,7 @@ namespace iDent.Views
             };
 
             ListViewMenu.ItemsSource = menuItems;
-            ListViewMenu.SelectedItem = menuItems[7];
+            ListViewMenu.SelectedItem = menuItems[menuItems.Count -1];
             ListViewMenu.ItemSelected += async (sender, e) =>
             {
                 if (e.SelectedItem == null)

@@ -102,6 +102,72 @@
             </expandable:ExpandableView.SecondaryViewTemplate>
 
         </expandable:ExpandableView>
+            <expandable:ExpandableView Margin="10" HorizontalOptions="FillAndExpand">
+            <expandable:ExpandableView.PrimaryView>
+                <StackLayout Padding="5" BackgroundColor="{StaticResource NavigationPrimary}" HorizontalOptions="FillAndExpand">
+                    <Label Text="What am I going to Learn?"
+                               TextColor="White" 
+                               FontAttributes="Bold"
+                               FontSize="14"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="FillAndExpand"
+                         />
+                </StackLayout>
+
+            </expandable:ExpandableView.PrimaryView>
+
+            <expandable:ExpandableView.SecondaryViewTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="5">
+                        <Label TextColor="White">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="You will gain practical experience within your surgery." />
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label TextColor="White">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="You will learn the theory and knowledge required for your role as a dental nurse."/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label TextColor="White">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="You will work through 11 SVQ units (detailed below) and be assessed on each one – each unit covers different aspects of dentistry."/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label TextColor="White">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="In addition you will work through the 4 PDAs which cover much of the knowledge and understanding required for dental nursing."/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+
+
+
+
+                    </StackLayout>
+                </DataTemplate>
+            </expandable:ExpandableView.SecondaryViewTemplate>
+
+        </expandable:ExpandableView>
+
+
 
 
 

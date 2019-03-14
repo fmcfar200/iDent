@@ -4,7 +4,8 @@
              xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              x:Class="iDent.Views.GalleryPage"
              xmlns:vm="clr-namespace:iDent.ViewModels"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="{StaticResource NavigationSecondary}">
 
     <ContentPage.BindingContext>
         <vm:GalleryViewModel />
@@ -38,7 +39,7 @@
                                 </ContentView>
 
                                 <ContentView Grid.Row="1" Padding="20,10,20,50">
-                                    <Label Text="{Binding Description}" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Description}" HorizontalTextAlignment="Center" TextColor="White"/>
                                 </ContentView>
                             </Grid>
                         </DataTemplate>
