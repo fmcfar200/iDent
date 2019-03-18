@@ -6,7 +6,6 @@ namespace iDent.Models
 {
     public enum MenuItemType
     {
-        Browse,
         Home,
         Apply,
         StudentLinks,
