@@ -1,25 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="iDent.Views.HomePage">
+             x:Class="iDent.Views.HomePage"
+             BackgroundColor="{StaticResource NavigationSecondary}">
 
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
-            <!--<ListView x:Name="NewsListView">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.View>
-                                <Frame>
-                                    
-                                </Frame>
-                            </ViewCell.View>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            
-            --><!--Home Page Links Listview--><!--
+        <StackLayout>
+            <StackLayout Orientation="Vertical" BackgroundColor="{StaticResource NavigationPrimary}" Margin="10,10,10,0" VerticalOptions="FillAndExpand">
+                <Label Text="Recent News" TextColor="White" FontAttributes="Bold" FontSize="Medium" Margin="5,0,0,0"/>
+                <StackLayout Margin="5,5,5,5" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                    <ActivityIndicator x:Name="activityIndicator" IsRunning="False" IsVisible="False"
+                         
+                          HeightRequest="40"
+                          VerticalOptions="CenterAndExpand"
+                          HorizontalOptions="CenterAndExpand">
+                        <ActivityIndicator.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double" iOS="100" Android="100" />
+                        </ActivityIndicator.WidthRequest>
+                        <ActivityIndicator.Color>
+                            <OnPlatform x:TypeArguments="Color"
+                      iOS="{StaticResource NavigationPrimary}" Android="{StaticResource NavigationPrimary}" />
+                        </ActivityIndicator.Color>
+                    </ActivityIndicator>
+                    <ListView x:Name="NewsListView" HasUnevenRows="True" SelectionMode="None" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <StackLayout HorizontalOptions="FillAndExpand" Padding="5">
+
+                                            <Label 
+                                                 TextColor="Black"
+                                                 FontAttributes="Bold"
+                                                 FontSize="Medium"
+                                                 HorizontalOptions="Start"
+                                                 Text="{Binding title}"
+                                                 MaxLines="2"
+                                                 />
+
+                                            <Label 
+                                                TextColor="Black"
+                                                FontAttributes="None"
+                                                FontSize="Default"
+                                                HorizontalOptions="Start"
+                                                Text="description descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription"
+                                                />
+
+                                            <Label 
+                                                TextColor="Black"
+                                                FontAttributes="None"
+                                                FontSize="10"
+                                                HorizontalOptions="Start"
+                                                Text="{Binding published}"
+                                                />
+
+                                        </StackLayout>
+
+
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+
+            <!--Home Page Links Listview-->
             <ListView x:Name="LinksListView" HasUnevenRows="True" SelectionMode="None" Margin="10,10,10,10">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -40,7 +86,7 @@
                                         Grid.Row="0" 
                                         HorizontalOptions="FillAndExpand" 
                                         VerticalOptions="FillAndExpand" 
-                                        Source=""
+                                        Source="Gallery03.png"
                                         Aspect="AspectFill"
                                         />
 
@@ -52,7 +98,7 @@
                                             BackgroundColor="#80000000">
 
                                             <Label 
-                                            Text=""
+                                            Text="ddvdvdvdvdvd"
                                             TextColor="White"
                                             FontAttributes="Bold"
                                             FontSize="Medium"
@@ -70,9 +116,11 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
 
-            </ListView>-->
+            </ListView>
+
         </StackLayout>
-        
+    
+       
     </ContentPage.Content>
     
 

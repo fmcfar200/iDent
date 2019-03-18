@@ -27,6 +27,8 @@ namespace iDent.Views
 
         public async void RefreshDataAsync()
         {
+            activityIndicator.IsRunning = true;
+            activityIndicator.IsVisible = true;
             // RestUrl = https://developer.xamarin.com:8081/api/todoitems/
             var uri = new Uri(string.Format("https://www.googleapis.com/blogger/v3/blogs/5130824177252453241/posts?key=AIzaSyC6PBj2-KYBm_mJ64Df8zstR_ZfnbCvwt0"));
 
@@ -37,6 +39,10 @@ namespace iDent.Views
                 newsObject = JsonConvert.DeserializeObject<RootObject>(content);
 
                 Debug.WriteLine(newsObject.items[0].title);
+                NewsListView.ItemsSource = newsObject.items.Take(2);
+                activityIndicator.IsRunning = false;
+                activityIndicator.IsVisible = false;
+
             }
            
             
