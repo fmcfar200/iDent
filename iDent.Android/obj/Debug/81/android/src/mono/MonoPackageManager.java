@@ -114,6 +114,7 @@ class MonoPackageManager_Resources {
 		"ExpandableView.dll",
 		"FormsViewGroup.dll",
 		"iDent.dll",
+		"Newtonsoft.Json.dll",
 		"Plugin.Messaging.Abstractions.dll",
 		"Plugin.Messaging.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",

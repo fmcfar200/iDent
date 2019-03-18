@@ -26,6 +26,9 @@ namespace iDent.Views
             {
                 switch (id)
                 {
+                    case (int)MenuItemType.Home:
+                        MenuPages.Add(id, new NavigationPage(new HomePage()));
+                        break;
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;

@@ -5,7 +5,7 @@
 
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <ListView x:Name="NewsListView">
+            <!--<ListView x:Name="NewsListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -19,7 +19,7 @@
                 </ListView.ItemTemplate>
             </ListView>
             
-            <!--Home Page Links Listview-->
+            --><!--Home Page Links Listview--><!--
             <ListView x:Name="LinksListView" HasUnevenRows="True" SelectionMode="None" Margin="10,10,10,10">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -70,7 +70,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
 
-            </ListView>
+            </ListView>-->
         </StackLayout>
         
     </ContentPage.Content>

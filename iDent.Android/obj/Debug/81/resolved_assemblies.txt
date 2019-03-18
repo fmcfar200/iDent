@@ -9,6 +9,7 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\asse
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Java.Interop.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\mscorlib.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Newtonsoft.Json.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Plugin.Messaging.Abstractions.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Plugin.Messaging.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Core.dll
