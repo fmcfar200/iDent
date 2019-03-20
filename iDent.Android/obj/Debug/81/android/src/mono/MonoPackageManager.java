@@ -113,6 +113,7 @@ class MonoPackageManager_Resources {
 		"Com.ViewPagerIndicator.dll",
 		"ExpandableView.dll",
 		"FormsViewGroup.dll",
+		"HtmlAgilityPack.dll",
 		"iDent.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.Messaging.Abstractions.dll",

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="iDent.Views.HomePage"
-             BackgroundColor="{StaticResource NavigationSecondary}">
+             BackgroundColor="{StaticResource NavigationSecondary}"
+             Title="Home">
 
     <ContentPage.Content>
         <StackLayout>
@@ -22,6 +23,7 @@
                       iOS="{StaticResource NavigationPrimary}" Android="{StaticResource NavigationPrimary}" />
                         </ActivityIndicator.Color>
                     </ActivityIndicator>
+                    <Label x:Name="NoNewsLabel" Text="No Recent News" TextColor="DimGray" HorizontalTextAlignment="Center" FontSize="Medium" IsVisible="False" FontAttributes="Italic"/>
                     <ListView x:Name="NewsListView" HasUnevenRows="True" SelectionMode="None" >
                         <ListView.ItemTemplate>
                             <DataTemplate>

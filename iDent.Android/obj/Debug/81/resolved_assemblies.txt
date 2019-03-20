@@ -5,6 +5,7 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\asse
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Com.ViewPagerIndicator.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\ExpandableView.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\FormsViewGroup.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\HtmlAgilityPack.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\iDent.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Java.Interop.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Mono.Android.dll
@@ -14,6 +15,7 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\asse
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Plugin.Messaging.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Core.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.dll
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Net.Http.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Xml.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Xml.Linq.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Xamarin.Android.Arch.Core.Common.dll
@@ -46,7 +48,6 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\asse
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.IO.Compression.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.IO.Compression.FileSystem.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.ComponentModel.Composition.dll
-C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Net.Http.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Runtime.Serialization.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.ServiceModel.Internals.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\System.Web.Services.dll

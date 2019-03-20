@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Diagnostics;
 using Newtonsoft.Json;
 using iDent.Models;
+using HtmlAgilityPack;
 
 namespace iDent.Views
 {
@@ -29,7 +30,7 @@ namespace iDent.Views
 
         public async void RefreshDataAsync()
         {
-            ActivityIndicator(true);
+            ActivityIndicatorActive(true);
             // RestUrl = https://developer.xamarin.com:8081/api/todoitems/
             var uri = new Uri(string.Format("https://www.googleapis.com/blogger/v3/blogs/5130824177252453241/posts?key=AIzaSyC6PBj2-KYBm_mJ64Df8zstR_ZfnbCvwt0"));
 
@@ -39,54 +40,60 @@ namespace iDent.Views
                 var content = await response.Content.ReadAsStringAsync();
 
 
-                try
+                
+                
+                newsObject = JsonConvert.DeserializeObject<RootObject>(content);
+
+                if (newsObject != null && newsObject.items != null)
                 {
-                    newsObject = JsonConvert.DeserializeObject<RootObject>(content);
-
-                    if (newsObject != null)
+                    foreach (Item item in newsObject.items)
                     {
-                        foreach (Item item in newsObject.items)
+                        string itemContent = item.content;
+
+                        if (!string.IsNullOrEmpty(itemContent) && !string.IsNullOrWhiteSpace(itemContent))
                         {
-                            string itemContent = item.content;
+                            
+                            int firstImageLink = itemContent.IndexOf("src=\"") + "src=\"".Length;
+                            int lastImageLink = itemContent.LastIndexOf("\" w");
+                            string imageLink = itemContent.Substring(firstImageLink, lastImageLink - firstImageLink);
+                            item.headerImageURL = imageLink;
 
-                            if (!string.IsNullOrEmpty(itemContent) && !string.IsNullOrWhiteSpace(itemContent))
-                            {
-                                int firstImageLink = itemContent.IndexOf("src=\"") + "src=\"".Length;
-                                int lastImageLink = itemContent.LastIndexOf("\" w");
-                                string imageLink = itemContent.Substring(firstImageLink, lastImageLink - firstImageLink);
-                                item.headerImageURL = imageLink;
-
-                                int firstBody = itemContent.LastIndexOf("</div>\n") + "</div>\n".Length;
-                                //int lastBody= itemContent.LastIndexOf("");
-                                string body = itemContent.Substring(firstBody);
-                                item.body = body + " " + item.headerImageURL;
-
-                            }
-
+                            int firstBody = itemContent.LastIndexOf("</div>\n") + "</div>\n".Length;
+                            int lastBody= itemContent.LastIndexOf("");
+                            string body = itemContent.Substring(firstBody);
+                            item.body = body;
 
                         }
+
+
                     }
 
+                    NewsListView.ItemsSource = newsObject.items.Take(2);
+                    ActivityIndicatorActive(false);
                 }
-                catch (NullReferenceException e)
+                else
                 {
-                    ActivityIndicator(false);
-                    throw new System.NullReferenceException();
-                }
+                    Debug.WriteLine("No Recent News");
+                    ActivityIndicatorActive(false);
+                    NoNewsLabel.Text = "No Recent News";
+                    NoNewsLabel.IsVisible = true;
 
+                }
 
                 
-
-
-                NewsListView.ItemsSource = newsObject.items.Take(2);
-                ActivityIndicator(false);
-
+            }
+            else
+            {
+                Debug.WriteLine("No Connection");
+                ActivityIndicatorActive(false);
+                NoNewsLabel.Text="No Connection Available";
+                NoNewsLabel.IsVisible = true;
             }
 
 
         }
 
-        private void ActivityIndicator(bool onOffBool)
+        private void ActivityIndicatorActive(bool onOffBool)
         {
             activityIndicator.IsRunning = onOffBool;
             activityIndicator.IsVisible = onOffBool;
