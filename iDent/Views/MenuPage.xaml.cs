@@ -63,8 +63,6 @@ namespace iDent.Views
                    
                 }
             };
-
-
         }
 
         private void OpenLink(Uri uri)

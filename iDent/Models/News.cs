@@ -69,6 +69,9 @@ namespace iDent.Models
         public Author author { get; set; }
         [JsonProperty]
         public Replies replies { get; set; }
+
+        public string body { get; set; }
+        public string headerImageURL { get; set; }
     }
 
     [JsonObject(MemberSerialization.OptIn)]

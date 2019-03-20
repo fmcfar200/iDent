@@ -43,7 +43,9 @@
                                                 FontAttributes="None"
                                                 FontSize="Default"
                                                 HorizontalOptions="Start"
-                                                Text="description descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription"
+                                                MaxLines="2"
+                                                LineBreakMode="TailTruncation"
+                                                Text="{Binding body}"
                                                 />
 
                                             <Label 
