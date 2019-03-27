@@ -10,19 +10,23 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using iDent.Models;
+using iDent.ViewModels;
 
 namespace iDent.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ApplyPageReview : ContentPage
 	{
+        ApplyPage1ViewModel applyPage1ViewModel = new ApplyPage1ViewModel();
         ApplicationForm applicationForm = new ApplicationForm();
-        string script;
+        string applyValuesJS;
+        string submitValuesJS;
+
 		public ApplyPageReview (ApplicationForm applyForm)
 		{
 			InitializeComponent ();
             applicationForm = applyForm;
-            script = "javascript:" + $"document.getElementById('multichoice_23').value = {applicationForm.CourseNumber};" +
+            applyValuesJS = "javascript:" + $"document.getElementById('multichoice_23').value = {applicationForm.CourseNumber};" +
             $"document.getElementById('textfield_24').value = '{HttpUtility.JavaScriptStringEncode(applicationForm.DateOfApplication)}';" +
             $"document.getElementById('textfield_6').value = '{HttpUtility.JavaScriptStringEncode(applicationForm.Name)}';"+
             $"document.getElementById('textarea_8').value = '{HttpUtility.JavaScriptStringEncode(applicationForm.Address)}';" +
@@ -39,6 +43,30 @@ namespace iDent.Views
             $"document.getElementById('textarea_16').value = '{HttpUtility.JavaScriptStringEncode(applicationForm.EmployerAddress)}';" +
             $"document.getElementById('textfield_17').value = '{HttpUtility.JavaScriptStringEncode(applicationForm.EmployerNumber)}';";
 
+            submitValuesJS = "javascript:" + $"document.getElementsByName('savevalues')[0].click();";
+
+            CourseLabel.Text = "Course: \n" + applyPage1ViewModel.CoursePickerList[applicationForm.CourseNumber - 1];
+            NameLabel.Text = "Name: \n" + applicationForm.Name;
+            AddressLabel.Text = "Address: \n" + applicationForm.Address;
+            DOBLabel.Text = "Date of Birth: \n" + applicationForm.DOB;
+            EmailLabel.Text = "Email: \n" + applicationForm.email;
+            HomeTelLabel.Text = "Home Telephone: \n" + applicationForm.HomeNumber;
+            MobilTelLabel.Text = "Mobile Telephone: \n" + applicationForm.MobileNumber;
+
+            SchoolLabel.Text = "School: \n" + applicationForm.SchoolCollege;
+            QualLabel.Text = "Qualifications: \n" + applicationForm.Qualifications;
+            SCNLabel.Text = "Scottish Candidate Number: \n" + applicationForm.SCN;
+            ReasonForApplyLabel.Text = "Reason For Applying: \n" + applicationForm.ReasonForApplication;
+            HearLabel.Text = "Where did you hear about this course: \n" + applicationForm.WhereDidYouHear;
+
+            employerNameLabel.Text = "Employer Name: \n" + applicationForm.EmployerName;
+            EmployerAddressLabel.Text = "Employer Address: \n" + applicationForm.EmployerAddress;
+            EmployerContactLabel.Text = "Employer Contact: \n" + applicationForm.EmployerNumber;
+
+
+
+
+
 
 
 
@@ -46,8 +74,17 @@ namespace iDent.Views
 
         private async void Button_ClickedAsync(object sender, EventArgs e)
         {
-                await _webView.EvaluateJavaScriptAsync(script);
+                //submit script here and validate
+                //await _webView.EvaluateJavaScriptAsync(applyValuesJS);
+                
 
+        }
+
+        private async void _webView_Navigated(object sender, WebNavigatedEventArgs e)
+        {
+           
+            await _webView.EvaluateJavaScriptAsync(applyValuesJS);
+           
         }
 
 

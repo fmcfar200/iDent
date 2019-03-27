@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="iDent.Views.ApplyPageReview">
+             x:Class="iDent.Views.ApplyPageReview"
+             BackgroundColor="{StaticResource NavigationSecondary}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -12,7 +13,7 @@
             <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="5">
 
                 <!--EMPLOYER YOU HEADER-->
-                <Label TextColor="Black">
+                <Label TextColor="White">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
@@ -31,10 +32,48 @@
                     </Label.FormattedText>
                 </Label>
 
-                <Button Clicked="Button_ClickedAsync" />
-                <WebView x:Name="_webView" Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=191&amp;courseid&amp;gopage=0"
-                     VerticalOptions="FillAndExpand"/>
-                
+                <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                    <StackLayout Padding="5">
+                        <Label Text="About You" FontSize="18" FontAttributes="Bold"/>
+                        <Label x:Name="CourseLabel"/>
+                        <Label x:Name="NameLabel"/>
+                        <Label x:Name="AddressLabel"/>
+                        <Label x:Name="DOBLabel"/>
+                        <Label x:Name="EmailLabel"/>
+                        <Label x:Name="HomeTelLabel"/>
+                        <Label x:Name="MobilTelLabel"/>
+
+                        <Label Text="Your Qualifications" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0"/>
+                        <Label x:Name="SchoolLabel"/>
+                        <Label x:Name="QualLabel"/>
+                        <Label x:Name="SCNLabel"/>
+                        <Label x:Name="ReasonForApplyLabel"/>
+                        <Label x:Name="HearLabel"/>
+
+                        <Label Text="Employment" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0"/>
+                        <Label x:Name="employerNameLabel"/>
+                        <Label x:Name="EmployerAddressLabel"/>
+                        <Label x:Name="EmployerContactLabel"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+
+
+                <Button 
+                    Text="Submit"
+                    TextColor="White"
+                    HorizontalOptions="Center" 
+                    Margin="0,15,0,0"
+                    BackgroundColor="{StaticResource NavigationPrimary}"
+                    
+                    Clicked="Button_ClickedAsync"
+                   />
+                <WebView x:Name="_webView" 
+                         Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=191&amp;courseid&amp;gopage=0"
+                         VerticalOptions="FillAndExpand"
+                         Navigated="_webView_Navigated"/>
+
             </StackLayout>
 
 
