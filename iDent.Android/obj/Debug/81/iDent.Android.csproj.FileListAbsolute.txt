@@ -182,6 +182,8 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\asse
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\green_check.png
+C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\res\drawable\error_mark.png
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\bin\Debug\netstandard2.0\iDent.dll
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\bin\Debug\iDent.dll.mdb
 C:\Users\Fraser\source\repos\iDent\iDent\iDent.Android\obj\Debug\81\linksrc\iDent.dll.mdb

@@ -21,3 +21,4 @@ C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\Ap
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ApplyPageReview.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
 C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Fraser\source\repos\iDent\iDent\iDent\obj\Debug\netstandard2.0\Views\ContactComplete.xaml.g.cs

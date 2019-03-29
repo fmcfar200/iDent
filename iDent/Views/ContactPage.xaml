@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="iDent.Views.ContactPage"
              xmlns:vm="clr-namespace:iDent.ViewModels"
+             xmlns:behaviours ="clr-namespace:iDent.Services"
              BackgroundColor="{StaticResource NavigationSecondary}"
              Title="{Binding Title}">
 
@@ -50,7 +51,11 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Name" BackgroundColor="#224F5F"  />
+                <Entry x:Name="NameEntry" Placeholder="Name" BackgroundColor="#224F5F">
+                    <Entry.Behaviors>
+                        <behaviours:IsNotNullOrEmptyValidation x:Name="NameEntryBehavior"/>
+                    </Entry.Behaviors>
+                </Entry>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -71,7 +76,11 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Entry Placeholder="Email" BackgroundColor="#224F5F"/>
+                <Entry x:Name="EmailEntry" Placeholder="Email" BackgroundColor="#224F5F">
+                    <Entry.Behaviors >
+                        <behaviours:EmailValidationBehavior x:Name="EmailValidation"/>
+                    </Entry.Behaviors>
+                </Entry>
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
@@ -94,7 +103,11 @@
                 </Label>
                 <StackLayout BackgroundColor="White">
                     <StackLayout BackgroundColor="DarkSlateGray" Padding="1">
-                        <Editor Placeholder="Enter your message here..." HeightRequest="128" BackgroundColor="#224F5F" />
+                        <Entry x:Name="MessageEntry" Placeholder="Enter your message here..." HeightRequest="128" BackgroundColor="#224F5F" >
+                            <Entry.Behaviors>
+                                <behaviours:IsNotNullOrEmptyValidation x:Name="MessageBehaviour"/>
+                            </Entry.Behaviors>
+                        </Entry>
                     </StackLayout>
                 </StackLayout>
 
@@ -103,9 +116,16 @@
                     HorizontalOptions="End" 
                     Margin="0,15,0,0"
                     BackgroundColor="{StaticResource NavigationPrimary}"
+                    Clicked="Send_Button_Clicked"
                    />
+                
+                <WebView x:Name="theWebView" 
+                         Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=62&amp;courseid&amp;gopage=0"
+                         VerticalOptions="FillAndExpand"
+                         IsVisible="True"
+                         />
+                
             </StackLayout>
-            
             
         </ScrollView>
 

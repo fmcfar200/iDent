@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iDent.Views.ContactComplete"
+             BackgroundColor="{StaticResource NavigationSecondary}">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="activityIndicator" IsRunning="False" IsVisible="False"
+                         
+                          HeightRequest="40"
+                          VerticalOptions="CenterAndExpand"
+                          HorizontalOptions="CenterAndExpand">
+                <ActivityIndicator.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="100" Android="100" />
+                </ActivityIndicator.WidthRequest>
+                <ActivityIndicator.Color>
+                    <OnPlatform x:TypeArguments="Color"
+                      iOS="{StaticResource NavigationPrimary}" Android="{StaticResource NavigationPrimary}" />
+                </ActivityIndicator.Color>
+            </ActivityIndicator>
+
+            <StackLayout x:Name="Complete_Layout" IsVisible="False" Orientation="Vertical" Margin="10">
+                <Image Source="green_check.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"/>
+                <Label Text="Thank you for contacting us. We will respond to you as quickly as we can." TextColor="White" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+            <StackLayout x:Name="Failed_Layout" IsVisible="False" Orientation="Vertical" Margin="10">
+                <Image Source="error_mark.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"/>
+                <Label Text="An Error has occured. Please check connection and try again later." TextColor="White" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+            <Button Clicked="Button_Clicked" HorizontalOptions="CenterAndExpand"  />
+            <WebView x:Name="theWebView" 
+                         Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=62&amp;courseid&amp;gopage=0"
+                         VerticalOptions="FillAndExpand"
+                         IsVisible="False"
+                         Navigated="TheWebView_Navigated"
+                     
+                     
+                         />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

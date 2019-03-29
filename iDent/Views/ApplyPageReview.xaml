@@ -72,7 +72,8 @@
                 <WebView x:Name="_webView" 
                          Source="http://www.identtraining.com/mod/feedback/complete_guest.php?id=191&amp;courseid&amp;gopage=0"
                          VerticalOptions="FillAndExpand"
-                         Navigated="_webView_Navigated"/>
+                         Navigated="_webView_Navigated"
+                         IsVisible="False"/>
 
             </StackLayout>
 
